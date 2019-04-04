@@ -1,0 +1,14 @@
+function townLottery() {
+    let maxNumber = 100;
+    let randomNumberWithDecimal = Math.random() * maxNumber;
+    let randomNumberRounded = Math.floor(randomNumberWithDecimal);
+    return(randomNumberRounded);
+}
+function getNumbers() {
+    let firstNumber = townLottery();
+    let secondNumber = townLottery();
+    let thirdNumber = townLottery();
+    let ticket = firstNumber + '-' + secondNumber + '-' + thirdNumber;
+    
+    console.log('Your numbers are ' + ticket + ' !');
+}
